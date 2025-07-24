@@ -1,0 +1,44 @@
+.home-section {
+  /* background: #f5f5f5; */
+  min-height: 100vh;
+ font-family: "Outfit", sans-serif;
+ 
+}
+
+.home-section h1,
+.home-section h3 {
+  color: #333;
+  
+}
+
+
+.home-section span {
+  color: #f50dfd;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.profile-img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  object-position: center top; /* or center 30% */
+  border-radius: 50%;
+  animation: scalePulse 3s ease-in-out infinite;
+   box-shadow: 0 0 0.9rem rgba(169, 200, 200, 0.877);
+}
+
+
+

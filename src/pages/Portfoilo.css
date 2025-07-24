@@ -1,0 +1,97 @@
+:root {
+  --main-color: #127ef9;
+  --second-bg-color:white;
+  --bg-color: #dee2e6;
+  --text-color: #fff;
+}
+
+.portofolio {
+  background: var(--second-bg-color);
+  padding: 20px 0;
+  
+
+}
+
+.portofolio .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+}
+
+.portofolio .heading span {
+  color: var(--main-color);
+}
+
+.portofolio-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 220px;
+  box-shadow: 0 0 0.9rem var(--bg-color);
+  display: flex;
+}
+
+.portofolio-box img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portofolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portofolio-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(3, 238, 218, 0.877), var(--main-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.portofolio-box:hover .portofolio-layer {
+  transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+   font-family: "Lobster Two", sans-serif;
+   color:#2c2c2c;
+}
+
+.portofolio-layer p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  text-align: start;
+  font-family: "Outfit", sans-serif;
+  color:#444444
+}
+
+.portofolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.portofolio-layer a:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,101 @@
+/* Headings */
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+}
+.heading-2{
+    font-family: "Outfit", sans-serif;
+    font-weight:200;
+    font-size: 16px;
+}
+/* Tab links */
+.tab-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  /* margin: 1.5rem 0; */
+}
+
+.tab-link {
+  cursor: pointer;
+  font-weight: 500;
+  padding-bottom: 4px;
+  position: relative;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.tab-link.active-tab {
+  color: #f50dfd;
+  border-bottom: 2px solid #f50dfd;
+}
+
+/* About content */
+.about-content {
+  transition: all 0.3s ease-in-out;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Outfit", sans-serif;
+}
+
+/* List items */
+.about-content ul {
+  padding-left: 0;
+}
+
+.about-content li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.2rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Experience section */
+.company-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-content li {
+    font-size: 1rem;
+  }
+
+  .tab-links {
+    gap: 10px;
+  }
+}

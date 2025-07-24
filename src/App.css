@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+.multi-border-btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+  font-family: "Lobster Two", sans-serif;;
+}
+
+.multi-border-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #47e4c2);
+  border-radius: 25px;
+  padding: 3px;
+  z-index: -1;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.multi-border-btn:hover {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #47e4c2);
+  color: white;
+}
