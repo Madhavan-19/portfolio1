@@ -34,7 +34,7 @@
 .portofolio-box img {
   width: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .portofolio-box:hover img {
@@ -53,14 +53,14 @@
   justify-content: center;
   align-items: center;
   padding: 0 15px;
-  transform: translateY(100%);
+  transform: translateY(100%) !important;
   transition: transform 0.5s ease;
   color: var(--text-color);
   text-align: center;
 }
 
 .portofolio-box:hover .portofolio-layer {
-  transform: translateY(0);
+  transform: translateY(0) !important;
 }
 
 .portofolio-layer h4 {
@@ -94,4 +94,29 @@
 
 .portofolio-layer a:hover {
   transform: scale(1.1);
+}
+/* Ensure modal is above everything else */
+.modal {
+  z-index: 9999;
+}
+/* ✅ Disable hover layer when modal is active */
+body.modal-opened .portofolio-box:hover .portofolio-layer {
+  transform: translateY(100%) !important;
+  pointer-events: none;
+  opacity: 0.4;
+}
+body.modal-opened .portofolio-box:hover .portofolio-layer {
+  transform: translateY(100%) !important;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.tools-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.tools-list li {
+  font-size: 0.95rem;
+  color: #333;
 }
