@@ -137,19 +137,18 @@ const Portfolio = () => {
 
         <div className="text-center mb-5">
           <Button
-            className="multi-border-btn m-1"
-            variant={filter === "own" ? "primary" : "outline-primary"}
-            onClick={() => setFilter("own")}
-          >
-            Own Projects
-          </Button>
-          <Button
-            className="multi-border-btn"
-            variant={filter === "working" ? "primary" : "outline-primary"}
-            onClick={() => setFilter("working")}
-          >
-            Working Projects
-          </Button>
+  className={`multi-border-btn m-1 ${filter === "own" ? "active" : ""}`}
+  onClick={() => setFilter("own")}
+>
+  Own Projects
+</Button>
+<Button
+  className={`multi-border-btn ${filter === "working" ? "active" : ""}`}
+  onClick={() => setFilter("working")}
+>
+  Working Projects
+</Button>
+
         </div>
 
         <Row>
