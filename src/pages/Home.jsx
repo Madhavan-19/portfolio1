@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import { FaDownload } from 'react-icons/fa';
 import pdf from '../assets/Madhavan-s.pdf';
-import profilePic from '../assets/madhavan.jpg';
+import profilePic from '../assets/madhavan.JPG';
 import './Home.css';
 
 const roles = ['Web Developer', 'ReactJS Developer', 'UI Developer / Figma', 'Frontend Developer'];
