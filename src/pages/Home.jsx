@@ -22,7 +22,7 @@ const Home = () => {
     <section
       id="home"
       className="home-section d-flex align-items-center"
-      style={{ minHeight: '100vh', paddingTop: '70px' }}
+      style={{ minHeight: '100vh', paddingTop: '70px' ,background:'black'}}
     >
       <Container>
         <Row className="align-items-center">

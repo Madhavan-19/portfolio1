@@ -11,7 +11,7 @@ import indiaImg from "../assets/india.jpg";
 import bmiImg from "../assets/BMI-Chart.jpg";
 import foodImg from "../assets/food.jpg";
 import booksImg from "../assets/Books.jpg";
-import saddam from "../assets/saddam.png";
+import saddam from "../assets/saddam.jpg";
 import suhaa from "../assets/suhaagalaxy.png";
 import sdc from "../assets/sdc.png";
 
@@ -129,7 +129,7 @@ const Portfolio = () => {
   }, [filter]);
 
   return (
-    <section className="portofolio" id="portfolio">
+    <section className="portofolio" id="portfolio" style={{background:'black'}}>
       <Container>
         <h2 className="heading text-center mb-4">
           Latest <span style={{ color: "#f50dfd" }}>Project</span>
@@ -188,7 +188,7 @@ const Portfolio = () => {
             variant="secondary"
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            style={{color:"#f50dfd",background:"black"}}
+            style={{color:"#f50dfd",background:"white"}}
             className="me-2"
           >
             &#8592;
@@ -196,7 +196,7 @@ const Portfolio = () => {
           <Button
             variant="secondary"
             onClick={handleNext}
-            style={{color:"#f50dfd",background:"black"}}
+            style={{color:"#f50dfd",background:"white"}}
             disabled={currentIndex + itemsPerPage >= dataToDisplay.length}
           >
             &#8594;
@@ -207,7 +207,7 @@ const Portfolio = () => {
       {/* 🔵 MODAL only for Working Projects */}
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
-          <Modal.Title className="heading fs-3">{modalContent.title}</Modal.Title>
+          <Modal.Title className="heading fs-3" style={{color:'black',textDecoration:'underline'}}>{modalContent.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img

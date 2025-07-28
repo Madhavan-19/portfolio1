@@ -7,7 +7,7 @@
 
 .home-section h1,
 .home-section h3 {
-  color: #333;
+  color:white;
   
 }
 
@@ -20,6 +20,7 @@
 .home-section p {
   font-size: 1.1rem;
   line-height: 1.6;
+  color:rgba(255, 255, 255, 0.82)
 }
 @keyframes scalePulse {
   0%, 100% {

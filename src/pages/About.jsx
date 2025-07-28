@@ -97,12 +97,12 @@ const About = () => {
           src={exp.logo}
           alt={`${exp.company} Logo`}
           className="company-logo"
-          style={{ width: '50px', height: '50px', objectFit: 'contain', borderRadius: '8px' }}
+          style={{ width: '50px', height: '50px', objectFit: 'contain', borderRadius: '8px',border:'2px solid white',background:'white' }}
         />
         <div>
           <strong>{exp.company}</strong><br />
           {exp.role}<br />
-          <span className="text-muted">
+          <span className="text" style={{color:'gray'}}>
             {calculateExperienceDuration(exp.startDate, exp.endDate)}
           </span>
         </div>
@@ -120,7 +120,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="about-section py-5 bg-light" style={{ paddingTop: '70px' }}>
+    <section id="about" className="about-section py-5 " style={{ paddingTop: '70px' }}>
       <Container>
         <Row className="justify-content-center text-center">
           <Col lg={8} md={10}>

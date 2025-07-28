@@ -6,6 +6,15 @@ import './Navbars.css';
 
 const NavbarComponent = () => {
   const [expanded, setExpanded] = useState(false);
+ const handleClick = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const email = "madhavans194@gmail.com";
+    const url = isMobile
+      ? `mailto:${email}`
+      : `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+
+    window.open(url, "_blank");
+  };
 
   return (
     <Navbar expanded={expanded} expand="lg" className="navbar shadow-sm fixed-top bg-light py-2">
@@ -16,16 +25,16 @@ const NavbarComponent = () => {
 
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
-          className="border-0"
+          className="border-0" style={{color:'white'}}
         >
           {expanded ? <FaTimes size={20} /> : <FaBars size={20} />}
         </Navbar.Toggle>
 
         <Navbar.Collapse className="justify-content-between w-100">
           <Nav className="mx-auto text-center nav-links">
-            <Nav.Link href="#home" onClick={() => setExpanded(false)}>Home</Nav.Link>
-            <Nav.Link href="#about" onClick={() => setExpanded(false)}>About</Nav.Link>
-            <Nav.Link href="#portfolio" onClick={() => setExpanded(false)}>Portfolio</Nav.Link>
+            <Nav.Link href="#home" style={{color:'white'}} onClick={() => setExpanded(false)}>Home</Nav.Link>
+            <Nav.Link href="#about" style={{color:'white'}} onClick={() => setExpanded(false)}>About</Nav.Link>
+            <Nav.Link href="#portfolio"style={{color:'white'}}  onClick={() => setExpanded(false)}>Portfolio</Nav.Link>
           </Nav>
 
           <div className="d-flex justify-content-end gap-3 align-items-center mt-3 mt-lg-0 social-icons">
@@ -51,7 +60,7 @@ const NavbarComponent = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub size={22} className="text-dark" />
+                <FaGithub size={22} className="text-light"/>
               </a>
             </OverlayTrigger>
 
@@ -72,13 +81,14 @@ const NavbarComponent = () => {
               placement="bottom"
               overlay={<Tooltip id="tooltip-email">Send Email</Tooltip>}
             >
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=madhavans194@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaEnvelope size={22} className="text-danger" />
-              </a>
+              <span
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+      title="Send Email"
+    >
+      <FaEnvelope size={22} className="text-danger" />
+    </span>
+
             </OverlayTrigger>
           </div>
         </Navbar.Collapse>
