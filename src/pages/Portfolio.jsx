@@ -23,6 +23,24 @@ const Portfolio = () => {
   const itemsPerPage = 3;
 
   const ownProjects = [
+     {
+      title: "Library Stack",
+      desc: "Add book cart show will add extra book minus and plus.Local storage Using in html ,css, Js.",
+      img: booksImg,
+      link: "https://madhavan-19.github.io/library-stack/",
+    },
+        {
+      title: "Maddy-FoodZ",
+      desc: "This is a responsive food ordering website built using React for the frontend and Firebase for backend services like Authentication and Firestore (database). The app allows users to sign up, log in, and place food orders securely.",
+      img: foodImg,
+      link: "https://foodz-ordering.vercel.app/",
+    },
+     {
+      title: "India Trip's",
+      desc: "One of the significant benefits of using React. js for tour and travels websites is the ability to create a single-page application (SPA).",
+      img: indiaImg,
+      link: "https://india-trips.netlify.app/",
+    },
     {
       title: "Responsive Navbar",
       desc: "A responsive navbar menu is a crucial element of a website that adjusts its layout and appearance based on the screen size and device type used by the user.",
@@ -36,29 +54,12 @@ const Portfolio = () => {
       link: "https://madhavan-19.github.io/color-flipers/",
     },
     {
-      title: "India Trip's",
-      desc: "One of the significant benefits of using React. js for tour and travels websites is the ability to create a single-page application (SPA).",
-      img: indiaImg,
-      link: "https://india-trips.netlify.app/",
-    },
-    {
       title: "BMI-Calculator",
       desc: " BMI (Body Mass Index) calculator using React JS is a web application that allows users to input their weight and height to calculate their BMI ",
       img: bmiImg,
       link: "https://madhavan-19.github.io/bmi/",
     },
-    {
-      title: "Maddy-FoodZ",
-      desc: "This is a responsive food ordering website built using React for the frontend and Firebase for backend services like Authentication and Firestore (database). The app allows users to sign up, log in, and place food orders securely.",
-      img: foodImg,
-      link: "https://foodz-ordering.vercel.app/",
-    },
-    {
-      title: "Library Stack",
-      desc: "Add book cart show will add extra book minus and plus.Local storage Using in html ,css, Js.",
-      img: booksImg,
-      link: "https://madhavan-19.github.io/library-stack/",
-    },
+   
   ];
 
   const workingProjects = [
