@@ -8,22 +8,21 @@ import {
   SiJira, SiFigma, SiReactrouter
 } from 'react-icons/si';
 import './About.css';
-import cloudLogo from '../assets/Cloud-Garage-ai.png';
 // import otherLogo from '../assets/other-company.png'; // Add your second logo if needed
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education');
 
-  const experiences = [
-    {
-      company: "Cloud Garage LLP",
-      role: "ReactJS Frontend Developer",
-      logo: cloudLogo,
-      startDate: "2025-03-10",
-      endDate: null, // current
-    },
+  // const experiences = [
+  //   {
+  //     company: "dummy",
+  //     role: "ReactJS Frontend Developer",
+  //     logo: cloudLogo,
+  //     startDate: "2025-03-10",
+  //     endDate: null, // current
+  //   },
     
-  ];
+  // ];
 
   const calculateExperienceDuration = (startDate, endDate) => {
     const start = new Date(startDate);
@@ -78,7 +77,7 @@ const About = () => {
           </div>
         );
 
-      case 'experience':
+      // case 'experience':
         return (
           <>
           <Row className="g-4 justify-content-center">
@@ -133,7 +132,7 @@ const About = () => {
             <div className="tab-links">
               <p className={`tab-link ${activeTab === 'education' ? 'active-tab' : ''}`} onClick={() => setActiveTab('education')}>Education</p>
               <p className={`tab-link ${activeTab === 'skills' ? 'active-tab' : ''}`} onClick={() => setActiveTab('skills')}>Skills</p>
-              <p className={`tab-link ${activeTab === 'experience' ? 'active-tab' : ''}`} onClick={() => setActiveTab('experience')}>Experience</p>
+              {/* <p className={`tab-link ${activeTab === 'experience' ? 'active-tab' : ''}`} onClick={() => setActiveTab('experience')}>Experience</p> */}
             </div>
 
             <div className="about-content">

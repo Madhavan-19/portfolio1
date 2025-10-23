@@ -11,9 +11,6 @@ import indiaImg from "../assets/india.jpg";
 import bmiImg from "../assets/BMI-Chart.jpg";
 import foodImg from "../assets/food.jpg";
 import booksImg from "../assets/Books.jpg";
-import saddam from "../assets/saddam.jpg";
-import suhaa from "../assets/suhaagalaxy.png";
-import sdc from "../assets/sdc.png";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("own");
@@ -62,42 +59,6 @@ const Portfolio = () => {
    
   ];
 
-  const workingProjects = [
-    {
-      title: "Saddam Nasikandar",
-      desc: "Admin dashboard design and userdashboard",
-      img: saddam,
-      tools: [
-        "ReactBootstrap",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "antd",
-        "Reactjs",
-        "Firebase",
-      ],
-    },
-    {
-      title: "Suhaa Gallaxy",
-      desc: "Business dashboard with inventory & reports.",
-      img: suhaa,
-      tools: ["Html", "css", "Javascript"],
-    },
-    {
-      title: "Sri Dhanalakshmi",
-      desc: "Order tracking dashboard with analytics.",
-      img: sdc,
-      tools: [
-        "Reactjs",
-        "Firebase",
-        "Html",
-        "Css",
-        "Antd UI",
-        "Figma",
-        "TailwindCSS",
-      ],
-    },
-  ];
 
   const dataToDisplay = filter === "own" ? ownProjects : workingProjects;
 
@@ -143,12 +104,12 @@ const Portfolio = () => {
 >
   Own Projects
 </Button>
-<Button
+{/* <Button
   className={`multi-border-btn ${filter === "working" ? "active" : ""}`}
   onClick={() => setFilter("working")}
 >
   Working Projects
-</Button>
+</Button> */}
 
         </div>
 
