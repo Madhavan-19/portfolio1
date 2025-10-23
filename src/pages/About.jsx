@@ -71,8 +71,8 @@ const About = () => {
             <div className="skill-icon"><SiAntdesign style={{ color: '#1890ff' }} /></div>
             <div className="skill-icon"><FaGitAlt style={{ color: '#f34f29' }} /></div>
             <div className="skill-icon"><SiFirebase style={{ color: '#FFCA28' }} /></div>
-            <div className="skill-icon"><SiJira style={{ color: '#0052CC' }} /></div>
-            <div className="skill-icon"><SiFigma style={{ color: '#F24E1E' }} /></div>
+            {/* <div className="skill-icon"><SiJira style={{ color: '#0052CC' }} /></div> */}
+            {/* <div className="skill-icon"><SiFigma style={{ color: '#F24E1E' }} /></div> */}
             <div className="skill-icon"><SiReactrouter style={{ color: '#CA4245' }} /></div>
           </div>
         );
