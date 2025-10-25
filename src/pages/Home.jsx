@@ -5,7 +5,7 @@ import pdf from '../assets/Madhavan-s.pdf';
 import profilePic from '../assets/madhavan.JPG';
 import './Home.css';
 
-const roles = ['Web Developer', 'ReactJS Developer', 'UI Developer / Figma', 'Frontend Developer'];
+const roles = ['Web Developer', 'ReactJS Developer', 'UI Developer / Figma', 'Frontend Developer','MERN Stack Developer'];
 
 const Home = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -33,10 +33,12 @@ const Home = () => {
             <h3>
               And I'm a <span>{roles[currentRoleIndex]}</span>
             </h3>
-          <p>
-   I am a passionate <strong>React.js</strong> developer with a strong foundation in frontend development and  currently learning backend technologies. 
- <br/> I'm also actively working on real-time projects.
-            </p>
+         <p>
+  I am a passionate <strong>Full Stack</strong> developer with a strong foundation in frontend development, 
+  and I’m currently learning backend technologies.
+  I’m also actively working on real-time projects.
+</p>
+
 
 
             <a href={pdf} download>

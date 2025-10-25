@@ -5,7 +5,7 @@ import {
 } from 'react-icons/fa';
 import {
   SiTailwindcss, SiRedux, SiAntdesign, SiFirebase,
-  SiJira, SiFigma, SiReactrouter
+  SiJira, SiFigma, SiReactrouter, SiMongodb,SiNodedotjs
 } from 'react-icons/si';
 import './About.css';
 // import otherLogo from '../assets/other-company.png'; // Add your second logo if needed
@@ -71,9 +71,11 @@ const About = () => {
             <div className="skill-icon"><SiAntdesign style={{ color: '#1890ff' }} /></div>
             <div className="skill-icon"><FaGitAlt style={{ color: '#f34f29' }} /></div>
             <div className="skill-icon"><SiFirebase style={{ color: '#FFCA28' }} /></div>
-            {/* <div className="skill-icon"><SiJira style={{ color: '#0052CC' }} /></div> */}
-            {/* <div className="skill-icon"><SiFigma style={{ color: '#F24E1E' }} /></div> */}
+            <div className="skill-icon"><SiJira style={{ color: '#0052CC' }} /></div>
+            <div className="skill-icon"><SiFigma style={{ color: '#F24E1E' }} /></div>
             <div className="skill-icon"><SiReactrouter style={{ color: '#CA4245' }} /></div>
+            <div className="skill-icon"><SiMongodb style={{ color: '#47A248' }} /></div>
+            <div className="skill-icon"><SiNodedotjs style={{ color: '#68A063' }} /></div>
           </div>
         );
 
