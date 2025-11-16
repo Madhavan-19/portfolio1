@@ -6,7 +6,7 @@ import { BiChevronRight } from "react-icons/bi";
 
 // 🔗 Image imports
 import responsiveImg from "../assets/responsive.jpg";
-import colorFlipperImg from "../assets/color flliper.jpg";
+import colorFlipperImg from "../assets/colorflliper.jpg";
 import indiaImg from "../assets/india.jpg";
 import bmiImg from "../assets/BMI-Chart.jpg";
 import foodImg from "../assets/food.jpg";
@@ -14,8 +14,8 @@ import booksImg from "../assets/Books.jpg";
 
 
 import saddam from "../assets/saddam.jpg";
-import suhaa from "../assets/suhaagalaxy.png";
-import sdc from "../assets/sdc.png";
+import suhaa from "../assets/suhaagalaxy.jpeg";
+import sdc from "../assets/sdc.jpeg";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("own");
