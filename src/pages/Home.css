@@ -32,14 +32,12 @@
 }
 
 .profile-img {
-  width: 270px;
-  height: 270px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
-  object-position: center top; /* or center 30% */
+  object-position: center 37%; /* IMPORTANT tweak */
   border-radius: 50%;
   animation: scalePulse 3s ease-in-out infinite;
-   box-shadow: 0 0 0.9rem rgba(169, 200, 200, 0.877);
 }
-
 
 

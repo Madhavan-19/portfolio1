@@ -13,9 +13,9 @@ import foodImg from "../assets/food.jpg";
 import booksImg from "../assets/Books.jpg";
 
 
-import saddam from "../assets/saddam.jpg";
-import suhaa from "../assets/suhaagalaxy.jpeg";
-import sdc from "../assets/sdc.jpeg";
+import Matrimony from "../assets/Matrimony.png";
+import Label from "../assets/Label.png";
+import AutoCloud from "../assets/Auto-Cloud.png";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("own");
@@ -66,37 +66,36 @@ const Portfolio = () => {
 
   const workingProjects = [
     {
-      title: "Saddam Nasikandar",
-      desc: "Admin dashboard design and userdashboard",
-      img: saddam,
+      title: "Vivagham Singapore",
+      desc: "Built a Matrimony web application with user dashboard and admin dashboard for managing profiles, matches, and platform activities.",
+      img: Matrimony,
       tools: [
         "ReactBootstrap",
-        "HTML",
-        "CSS",
         "JavaScript",
-        "antd",
+        "Antd",
         "Reactjs",
-        "Firebase",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "Vitest Testing",
+        "Stripe Payment Integration"
       ],
     },
     {
-      title: "Suhaa Gallaxy",
-      desc: "Business dashboard with inventory & reports.",
-      img: suhaa,
-      tools: ["Html", "css", "Javascript"],
+      title: "EMD Label Generator",
+      desc: "Developed a centralized admin dashboard for label generation, tracking, inventory management, and shipment reporting.",
+      img: Label,
+      tools: ["ReactJS","Python","FastAPI","Docker","SQL","Antd UI","Vitest Testing"],
     },
     {
-      title: "Sri Dhanalakshmi",
-      desc: "Order tracking dashboard with analytics.",
-      img: sdc,
+      title: "AutoCloud Dashboard",
+      desc: "An automated cloud resource management dashboard that enables users to connect and provision infrastructure across AWS, GCP, and Azure. Built to simplify cloud operations by integrating Terraform-based automation for seamless resource creation and management.",  
+      img: AutoCloud,
       tools: [
         "Reactjs",
-        "Firebase",
-        "Html",
-        "Css",
+        "python(FastAPI)",
+        "PostgreSQL",
         "Antd UI",
-        "Figma",
-        "TailwindCSS",
       ],
     },
   ];

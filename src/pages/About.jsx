@@ -5,24 +5,26 @@ import {
 } from 'react-icons/fa';
 import {
   SiTailwindcss, SiRedux, SiAntdesign, SiFirebase,
-  SiJira, SiFigma, SiReactrouter, SiMongodb,SiNodedotjs
+  SiJira, SiFigma, SiReactrouter, SiMongodb,SiNodedotjs,SiPython,SiDocker,
+  SiFastapi
 } from 'react-icons/si';
 import './About.css';
 // import otherLogo from '../assets/other-company.png'; // Add your second logo if needed
+import cloudLogo from '../assets/Cloud-Garage-ai.png'; // Add your company logo
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education');
 
-  // const experiences = [
-  //   {
-  //     company: "dummy",
-  //     role: "ReactJS Frontend Developer",
-  //     logo: cloudLogo,
-  //     startDate: "2025-03-10",
-  //     endDate: null, // current
-  //   },
+  const experiences = [
+    {
+      company: "Cloud Garage LLP",
+      role: "Full Stack Engineer",
+      logo: cloudLogo,
+      startDate: "2024-12-10",
+      endDate: null, // current
+    },
     
-  // ];
+  ];
 
   const calculateExperienceDuration = (startDate, endDate) => {
     const start = new Date(startDate);
@@ -54,8 +56,6 @@ const About = () => {
         return (
           <ul>
             <li><strong>B.Tech Information Technology</strong><br />2020–2024<br />8.28 CGPA</li>
-            <li><strong>12th Standard</strong><br />2020<br />60%</li>
-            <li><strong>10th Standard</strong><br />2018<br />74%</li>
           </ul>
         );
       case 'skills':
@@ -76,10 +76,13 @@ const About = () => {
             <div className="skill-icon"><SiReactrouter style={{ color: '#CA4245' }} /></div>
             <div className="skill-icon"><SiMongodb style={{ color: '#47A248' }} /></div>
             <div className="skill-icon"><SiNodedotjs style={{ color: '#68A063' }} /></div>
+            <div className='skill-icon'><SiPython style={{ color: '#3776ab' }} /></div>
+            <div className='skill-icon'><SiDocker style={{ color: '#0db7ed' }} /></div>
+            <div className='skill-icon'><SiFastapi style={{ color: '#009688' }} /></div>
           </div>
         );
 
-      // case 'experience':
+      case 'experience':
         return (
           <>
           <Row className="g-4 justify-content-center">
@@ -126,15 +129,18 @@ const About = () => {
         <Row className="justify-content-center text-center">
           <Col lg={8} md={10}>
             <h1 className="mb-3 heading">About <span style={{ color: '#f50dfd' }}>Me!</span></h1>
-            <p className='heading-2'>
-              I'm Madhavan from Veeraganur, Salem District, with a First Class B.Tech in <strong>Information Technology</strong>, building responsive and user-focused web apps using ReactJS, Redux, Tailwind CSS, and Bootstrap.
-              I'm passionate about clean code, teamwork, and continuous learning, and I aim to grow as a full-stack developer by contributing to impactful projects.
-            </p>
+           <p className='heading-2'>
+  I'm Madhavan from Veeraganur, Salem District, with a First Class B.Tech in <strong>Information Technology</strong>. 
+  I have <strong>1.5 years of experience</strong> in building responsive and user-focused web applications using 
+  <strong> ReactJS, Redux, Tailwind CSS, Bootstrap, NodeJS, ExpressJS, Python (FastAPI), and Ant Design (Antd)</strong>. 
+  I'm passionate about clean code, teamwork, and continuous learning, and I aim to grow as a full-stack developer 
+  by contributing to impactful real-world projects.
+</p>
 
             <div className="tab-links">
               <p className={`tab-link ${activeTab === 'education' ? 'active-tab' : ''}`} onClick={() => setActiveTab('education')}>Education</p>
               <p className={`tab-link ${activeTab === 'skills' ? 'active-tab' : ''}`} onClick={() => setActiveTab('skills')}>Skills</p>
-              {/* <p className={`tab-link ${activeTab === 'experience' ? 'active-tab' : ''}`} onClick={() => setActiveTab('experience')}>Experience</p> */}
+              <p className={`tab-link ${activeTab === 'experience' ? 'active-tab' : ''}`} onClick={() => setActiveTab('experience')}>Experience</p>
             </div>
 
             <div className="about-content">

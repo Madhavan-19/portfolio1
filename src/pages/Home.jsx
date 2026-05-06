@@ -2,15 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import { FaDownload } from 'react-icons/fa';
 import pdf from '../assets/Madhavan-s.pdf';
-import profilePic from '../assets/madhavan.JPG';
+import profilePic from '../assets/madhavan.png';
 import './Home.css';
 
-const roles = ['Web Developer', 'ReactJS Developer', 'UI Developer / Figma', 'Frontend Developer','MERN Stack Developer'];
+const roles = ['Web Developer', 'ReactJS Developer', 'UI Developer / Figma', 'Frontend Developer','MERN Stack Developer', 'Full Stack Engineer'];
 
 const Home = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {
+    console.log(roles[currentRoleIndex]);
     const interval = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
     }, 3000);
@@ -33,13 +34,12 @@ const Home = () => {
             <h3>
               And I'm a <span>{roles[currentRoleIndex]}</span>
             </h3>
-         <p>
-  I am a passionate <strong>Full Stack</strong> developer with a strong foundation in frontend development, 
-  and I’m currently learning backend technologies.
-  I’m also actively working on real-time projects.
+    <p>
+  I am a passionate <strong>Full Stack Developer</strong> with <strong>1.5+ years of experience</strong> in frontend development, 
+  specializing in <strong>ReactJS</strong>. I have hands-on experience in backend development using 
+  <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>MongoDB</strong>, and <strong>Python REST APIs</strong>. 
+  I am also actively working on real-time projects.
 </p>
-
-
 
             <a href={pdf} download>
               <Button className="mt-3 multi-border-btn">
