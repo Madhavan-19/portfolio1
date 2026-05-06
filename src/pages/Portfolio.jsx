@@ -14,7 +14,7 @@ import booksImg from "../assets/Books.jpg";
 
 
 import Matrimony from "../assets/Matrimony.png";
-import Label from "../assets/Label.png";
+import Label from "../assets/label.png";
 import AutoCloud from "../assets/Auto-Cloud.png";
 
 const Portfolio = () => {
